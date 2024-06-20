@@ -1,0 +1,115 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: grid;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "side dashboard dashboard dashboard dashboard";
+    background-color: #f3f5ff;
+    gap: 10px;
+}
+.side, .dashboard, .content {
+    background-color: white;
+    padding: 20px;
+    font-weight: bolder;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.side {
+    grid-area: side;
+    font-size: 18px;
+}
+
+.dashboard {
+    grid-area: dashboard;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.rows {
+    display: grid;
+    font-size: 16px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+    "username username username arrow"
+    "sec-one sec-two sec-three button";
+    background-color: #f3f5ff;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+svg{
+    color : #425e90;
+    grid-area: arrow;
+    display: flex;
+    margin-left: 89%;
+}
+
+.username {
+    grid-area: username;  
+}
+
+.sec-one {
+    grid-area: sec-one;
+}
+
+.sec-two {
+    grid-area: sec-two;
+}
+
+.sec-three {
+    grid-area: sec-three;
+}
+
+button {
+    color: #676b77;
+    background-color: #d1d5de;
+    border: 0;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.button {
+    grid-area: button;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.title {
+    font-size: 14px;
+    color: #717080;
+}
+
+.status {
+    font-size: 14px;
+    color: #000;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(235, 64, 64);
+    color: white;
+}
