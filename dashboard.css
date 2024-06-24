@@ -19,6 +19,7 @@
     background-color: #f3f5ff;
     gap: 10px;
 }
+
 .side, .dashboard, .content {
     background-color: white;
     padding: 20px;
@@ -26,6 +27,7 @@
     border-radius: 6px;
     font-size: 14px;
 }
+
 .side {
     grid-area: side;
     font-size: 18px;
